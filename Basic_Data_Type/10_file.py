@@ -27,7 +27,9 @@ import time # 和系统操作相关的模块引入
 # print(content)
 
 
-# 读取一行
+'''
+读取一行
+'''
 # line = f.readline().strip()
 # print(line)
 
@@ -46,7 +48,9 @@ import time # 和系统操作相关的模块引入
 # line = f.readline().strip()
 # print(line)
 
-# 读取多行
+'''
+读取多行
+'''
 # content = f.readlines()
 # print(content)
 
@@ -54,8 +58,9 @@ import time # 和系统操作相关的模块引入
 # for line in f:  # 从f中读取每一行
 #     print(line.strip())
     
-    
-# 写入文件
+'''
+写入文件
+'''  
 # w模式下，每一次open文件都会情况文件中的内容
 # f = open("嫩模.txt", mode="w", encoding="utf-8")
 # f.write("胡辣汤")
@@ -78,20 +83,26 @@ import time # 和系统操作相关的模块引入
 #     for item in f:
 #         print(item.strip())
 
-# 读取图片
+'''
+读取图片
+'''
 # with open("赵丽颖.png", mode="rb") as f:
 #     for line in f:
 #         print(line)
 
-# 文件的复制：
-# 从源文件中去读取内容，写入到新路径去
+'''
+文件的复制：
+从源文件中去读取内容，写入到新路径去
+'''
 # with open("赵丽颖.png", mode="rb") as f1, \
 #     open("胡一菲.png", mode="wb") as f2:
 #         for line in f1:
 #             f2.write(line)
-    
-# 文件修改
-# 把文件中的周 -> 张
+
+'''
+文件修改
+把文件中的周 -> 张
+'''
 with open("人名单.txt", mode="r", encoding="utf-8") as f1, \
     open("人名单_副本.txt", mode="w", encoding="utf-8") as f2:
         for line in f1:
